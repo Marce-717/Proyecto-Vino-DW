@@ -39,8 +39,8 @@ from xgboost import XGBRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.neighbors import KNeighborsRegressor
 
-d = pd.read_excel('C:/Users/marce/Proyecto vino/entrada_modelo_ols_precio7_20240711.xlsx', index_col=0)
-
+# d = pd.read_excel('C:/Users/marce/Proyecto vino/entrada_modelo_ols_precio7_20240711.xlsx', index_col=0)
+d = pd.read_excel('entrada_modelo_ols_precio7_20240711.xlsx', index_col=0)
 data = d[['CANTIDAD_sum', 'precio', 'precio_2', 'precio_7', 'precio_12','GDP_USA', 'precio_30']].copy()
 
 # Seleccionar las colum
